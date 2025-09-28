@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maintenance Settings</title>
+    <link rel="icon" href="/static/icons/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="AppName">
+    <link rel="apple-touch-icon" href="/static/icons/icon-192.png">
+    <link rel="apple-touch-icon" href="/static/icons/icon-192.png">
+    <link rel="manifest" href="../static/manifest.json">
+    <link rel="stylesheet" href="/static/styles/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/">🔧 Valve Control</a>
+        <a href="/add-device-page">➕ Add Device</a>
+        <a href="/graph-editor">🚰 Installation</a>
+    </nav>
+
+    <h1>Maintenance Settings</h1>
+
+    <label for="deviceSelect">Device:</label>
+    <select id="deviceSelect"></select>
+
+    <form id="maintenanceForm" onsubmit="return saveMaintenance(event)">
+        <label>
+        <input type="checkbox" id="enableMaintenance">
+        Enable maintenance
+        </label><br>
+
+        <label for="maintenanceTime">Maintenance time:</label>
+        <input type="time" id="maintenanceTime"><br>
+
+        <label for="maintenanceFrequency">Frequency:</label>
+        <select id="maintenanceFrequency">
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+        </select><br>
+
+        <button type="submit">Save Settings</button>
+    </form>
+    
+    <script src="/static/javascript_files/common.js"></script>
+    <script src="/static/javascript_files/maintenance.js"></script>
+</body>
+</html>

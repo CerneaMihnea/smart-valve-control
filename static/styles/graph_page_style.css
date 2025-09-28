@@ -1,0 +1,256 @@
+/* ============================================
+   === Global Layout & Typography ============
+============================================ */
+body, html {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px; /* space for fixed navbar */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f2f2f2, #e0f7fa);
+  color: #333;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* ============================================
+   === Navbar ================================
+============================================ */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* ============================================
+   === Forms (Reusable) ======================
+============================================ */
+form.responsive-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-sizing: border-box;
+}
+
+form.responsive-form label {
+  font-weight: bold;
+}
+
+form.responsive-form input,
+form.responsive-form select,
+form.responsive-form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form.responsive-form input[type="color"] {
+  height: 2.5rem;
+  padding: 0;
+  border: none;
+}
+
+form.responsive-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+form.responsive-form button:hover {
+  background-color: #0056b3;
+}
+
+/* ============================================
+   === Graph Editor Layout ===================
+============================================ */
+#wrapper {
+  display: flex;
+  height: calc(100vh - 60px);
+  max-height: calc(100vh - 60px);
+}
+
+#drawflow {
+  flex: 1;
+  background: #eee;
+  position: relative;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  width: 200px;
+  background: #f3f3f3;
+  padding: 10px;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Sidebar Buttons */
+#sidebar button {
+  width: 100%;
+  background-color: #3490dc;
+  border: 1px solid #3490dc;
+  margin: 6px 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#sidebar button:hover {
+  background-color: #2779bd;
+  transform: scale(1.02);
+}
+
+#sidebar button:active {
+  background-color: #d0d0d0;
+  transform: scale(0.98);
+}
+
+#sidebar button .label {
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+#sidebar.collapsed button .label {
+  display: none;
+}
+
+/* ============================================
+   === Device List & Toggle ==================
+============================================ */
+#device-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#device-list button {
+  display: block;
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #3490dc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#device-list button:hover {
+  background-color: #2779bd;
+}
+
+#devices-container {
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+#devices-container.collapsed {
+  max-height: 0;
+}
+
+#toggleDevicesBtn {
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* ============================================
+   === Flow Configuration Panel ==============
+============================================ */
+#flowConfigPanel {
+  margin-top: 10px;
+}
+
+#flowConfigPanel input {
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+#flowSelectorContainer {
+  margin-bottom: 1em;
+}
+
+#flowSelect {
+  width: 100%;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+}
+
+/* ============================================
+   === Responsive Design =====================
+============================================ */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    width: 100%;
+    text-align: center;
+  }
+
+  form.responsive-form {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  #wrapper {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  #drawflow {
+    height: 100%;
+  }
+}

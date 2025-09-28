@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valve Control</title>
+  <link rel="icon" href="/static/icons/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AppName">
+  <link rel="apple-touch-icon" href="/static/icons/icon-192.png">
+  <link rel="icon" href="/static/icons/icon-192.png">
+  <link rel="manifest" href="/static/manifest.json">
+  <link rel="stylesheet" href="/static/styles/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/graph-editor">🚰 Installation</a>
+    <a href="/add-device-page">➕ Add Device</a>
+    <a href="/maintenance-page">🛠️ Maintenance</a>
+  </nav>
+
+  <h1>Valve Control</h1>
+
+  <div id="zoneForm" onsubmit="return false;">
+    <div class="form-row">
+      <label for="zoneSelect">Zone:</label>
+      <select id="zoneSelect"></select>
+    </div>
+
+    <div class="form-row">
+      <label for="deviceSelect">Electrovalve:</label>
+      <select id="deviceSelect"></select>
+    </div>
+
+    <div id="status">
+      <p>Opening Status: <span id="statusText">Unknown</span></p>
+      <p>Last Command: <span id="lastCommand">-</span></p>
+    </div>
+
+    <label>
+      <input type="checkbox" id="applyAll" />
+      Send to all electrovalves in the zone
+    </label>
+
+    <div class="button-grid">
+      <button type="button" onclick="sendZone('percent_100')">🔓 100%</button>
+      <button type="button" onclick="sendZone('percent_75')">🔓 75%</button>
+      <button type="button" onclick="sendZone('percent_50')">🔓 50%</button>
+      <button type="button" onclick="sendZone('percent_25')">🔓 25%</button>
+      <button type="button" onclick="sendZone('percent_0')">🔒 0%</button>
+    </div>
+  </div>
+
+  <script src="/static/javascript_files/common.js"></script>
+  <script src="/static/javascript_files/index.js"></script>
+</body>
+</html>

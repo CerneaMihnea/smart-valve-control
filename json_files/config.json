@@ -1,0 +1,119 @@
+{
+  "Valva1": {
+    "zone": "Parter",
+    "zone_color": "#4fba7d",
+    "pin_relay_open": 16,
+    "pin_relay_close": 14,
+    "maintenance_enabled": true,
+    "maintenance_time": "03:00",
+    "maintenance_frequency": "daily",
+    "status": {
+      "status_open_percent": 75,
+      "last_command": "percent_75"
+    }
+  },
+  "Valva2": {
+    "zone": "Etaj",
+    "zone_color": "#e2d436",
+    "pin_relay_open": 2,
+    "pin_relay_close": 3,
+    "maintenance_enabled": false,
+    "maintenance_time": "12:00",
+    "maintenance_frequency": "daily",
+    "status": {
+      "status_open_percent": 100,
+      "last_command": "-"
+    }
+  },
+  "Valva3": {
+    "zone": "Etaj",
+    "zone_color": "#e2d436",
+    "pin_relay_open": 5,
+    "pin_relay_close": 6,
+    "maintenance_enabled": false,
+    "maintenance_time": "12:00",
+    "maintenance_frequency": "daily",
+    "status": {
+      "status_open_percent": 100,
+      "last_command": "-"
+    }
+  },
+  "Valva4": {
+    "zone": "Parter",
+    "zone_color": "#4fba7d",
+    "pin_relay_open": 3,
+    "pin_relay_close": 4,
+    "maintenance_enabled": false,
+    "maintenance_time": "12:00",
+    "maintenance_frequency": "daily",
+    "status": {
+      "status_open_percent": 100,
+      "last_command": "-"
+    }
+  },
+  "Valva5": {
+    "zone": "Etaj",
+    "zone_color": "#e2d436",
+    "pin_relay_open": 6,
+    "pin_relay_close": 7,
+    "maintenance_enabled": false,
+    "maintenance_time": "12:00",
+    "maintenance_frequency": "daily",
+    "status": {
+      "status_open_percent": 100,
+      "last_command": "-"
+    }
+  },
+  "Valva6": {
+    "zone": "Pod",
+    "zone_color": "#613583",
+    "pin_relay_open": 8,
+    "pin_relay_close": 9,
+    "maintenance_enabled": false,
+    "maintenance_time": "12:00",
+    "maintenance_frequency": "daily",
+    "status": {
+      "status_open_percent": 100,
+      "last_command": "-"
+    }
+  },
+  "Valva7": {
+    "zone": "CurteSpate",
+    "zone_color": "#0011ff",
+    "pin_relay_open": 6,
+    "pin_relay_close": 7,
+    "maintenance_enabled": false,
+    "maintenance_time": "12:00",
+    "maintenance_frequency": "daily",
+    "status": {
+      "status_open_percent": 100,
+      "last_command": "-"
+    }
+  },
+  "Valva8": {
+    "zone": "CurteFata",
+    "zone_color": "#ff00f7",
+    "pin_relay_open": 5,
+    "pin_relay_close": 6,
+    "maintenance_enabled": false,
+    "maintenance_time": "12:00",
+    "maintenance_frequency": "daily",
+    "status": {
+      "status_open_percent": 100,
+      "last_command": "-"
+    }
+  },
+  "Valva9": {
+    "zone": "Debara",
+    "zone_color": "#247402",
+    "pin_relay_open": 4,
+    "pin_relay_close": 5,
+    "maintenance_enabled": true,
+    "maintenance_time": "04:30",
+    "maintenance_frequency": "weekly",
+    "status": {
+      "status_open_percent": 0,
+      "last_command": "percent_0"
+    }
+  }
+}

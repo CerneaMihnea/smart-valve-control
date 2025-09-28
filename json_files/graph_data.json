@@ -1,0 +1,362 @@
+{
+    "drawflow": {
+        "Home": {
+            "data": {
+                "10": {
+                    "class": "Valva2",
+                    "data": {},
+                    "html": "\n      <div style=\"text-align:center;cursor:pointer;\" \n          title=\"Deschidere: 0% | Urm\u0103toarea mentenan\u021b\u0103: Inactiv\">\n        <img src=\"/static/icons/icon-512.png\" width=\"32\" height=\"32\" alt=\"valv\u0103\"/>\n        <div style=\"font-size:12px;margin-top:4px;\">\n          Valva2\n        </div>\n      </div>\n    ",
+                    "id": 10,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "input": "output_1",
+                                    "node": "18"
+                                }
+                            ]
+                        }
+                    },
+                    "name": "Valva2",
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "14",
+                                    "output": "input_1"
+                                },
+                                {
+                                    "node": "15",
+                                    "output": "input_1"
+                                }
+                            ]
+                        }
+                    },
+                    "pos_x": 531,
+                    "pos_y": 327,
+                    "typenode": false
+                },
+                "11": {
+                    "class": "Valva3",
+                    "data": {},
+                    "html": "\n      <div style=\"text-align:center;cursor:pointer;\" \n          title=\"Deschidere: 0% | Urm\u0103toarea mentenan\u021b\u0103: Inactiv\">\n        <img src=\"/static/icons/icon-512.png\" width=\"32\" height=\"32\" alt=\"valv\u0103\"/>\n        <div style=\"font-size:12px;margin-top:4px;\">\n          Valva3\n        </div>\n      </div>\n    ",
+                    "id": 11,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "input": "output_1",
+                                    "node": "18"
+                                }
+                            ]
+                        }
+                    },
+                    "name": "Valva3",
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "13",
+                                    "output": "input_1"
+                                }
+                            ]
+                        }
+                    },
+                    "pos_x": 518,
+                    "pos_y": 140,
+                    "typenode": false
+                },
+                "12": {
+                    "class": "Valva4",
+                    "data": {},
+                    "html": "\n      <div style=\"text-align:center;cursor:pointer;\" \n          title=\"Deschidere: 0% | Urm\u0103toarea mentenan\u021b\u0103: Inactiv\">\n        <img src=\"/static/icons/icon-512.png\" width=\"32\" height=\"32\" alt=\"valv\u0103\"/>\n        <div style=\"font-size:12px;margin-top:4px;\">\n          Valva4\n        </div>\n      </div>\n    ",
+                    "id": 12,
+                    "inputs": {
+                        "input_1": {
+                            "connections": []
+                        }
+                    },
+                    "name": "Valva4",
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "16",
+                                    "output": "input_1"
+                                },
+                                {
+                                    "node": "18",
+                                    "output": "input_1"
+                                }
+                            ]
+                        }
+                    },
+                    "pos_x": -18,
+                    "pos_y": 214,
+                    "typenode": false
+                },
+                "13": {
+                    "class": "Valva6",
+                    "data": {},
+                    "html": "\n      <div style=\"text-align:center;cursor:pointer;\" \n          title=\"Deschidere: 0% | Urm\u0103toarea mentenan\u021b\u0103: Inactiv\">\n        <img src=\"/static/icons/icon-512.png\" width=\"32\" height=\"32\" alt=\"valv\u0103\"/>\n        <div style=\"font-size:12px;margin-top:4px;\">\n          Valva6\n        </div>\n      </div>\n    ",
+                    "id": 13,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "input": "output_1",
+                                    "node": "11"
+                                }
+                            ]
+                        }
+                    },
+                    "name": "Valva6",
+                    "outputs": {
+                        "output_1": {
+                            "connections": []
+                        }
+                    },
+                    "pos_x": 769,
+                    "pos_y": 147,
+                    "typenode": false
+                },
+                "14": {
+                    "class": "Valva5",
+                    "data": {},
+                    "html": "\n      <div style=\"text-align:center;cursor:pointer;\" \n          title=\"Deschidere: 0% | Urm\u0103toarea mentenan\u021b\u0103: Inactiv\">\n        <img src=\"/static/icons/icon-512.png\" width=\"32\" height=\"32\" alt=\"valv\u0103\"/>\n        <div style=\"font-size:12px;margin-top:4px;\">\n          Valva5\n        </div>\n      </div>\n    ",
+                    "id": 14,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "input": "output_1",
+                                    "node": "10"
+                                }
+                            ]
+                        }
+                    },
+                    "name": "Valva5",
+                    "outputs": {
+                        "output_1": {
+                            "connections": []
+                        }
+                    },
+                    "pos_x": 782,
+                    "pos_y": 328,
+                    "typenode": false
+                },
+                "15": {
+                    "class": "Valva7",
+                    "data": {},
+                    "html": "\n      <div style=\"text-align:center;cursor:pointer;\" \n          title=\"Deschidere: 0% | Urm\u0103toarea mentenan\u021b\u0103: Inactiv\">\n        <img src=\"/static/icons/icon-512.png\" width=\"32\" height=\"32\" alt=\"valv\u0103\"/>\n        <div style=\"font-size:12px;margin-top:4px;\">\n          Valva7\n        </div>\n      </div>\n    ",
+                    "id": 15,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "input": "output_1",
+                                    "node": "10"
+                                }
+                            ]
+                        }
+                    },
+                    "name": "Valva7",
+                    "outputs": {
+                        "output_1": {
+                            "connections": []
+                        }
+                    },
+                    "pos_x": 784,
+                    "pos_y": 490,
+                    "typenode": false
+                },
+                "16": {
+                    "class": "Valva8",
+                    "data": {},
+                    "html": "\n      <div style=\"text-align:center;cursor:pointer;\" \n          title=\"Deschidere: 0% | Urm\u0103toarea mentenan\u021b\u0103: Inactiv\">\n        <img src=\"/static/icons/icon-512.png\" width=\"32\" height=\"32\" alt=\"valv\u0103\"/>\n        <div style=\"font-size:12px;margin-top:4px;\">\n          Valva8\n        </div>\n      </div>\n    ",
+                    "id": 16,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "input": "output_1",
+                                    "node": "12"
+                                }
+                            ]
+                        }
+                    },
+                    "name": "Valva8",
+                    "outputs": {
+                        "output_1": {
+                            "connections": []
+                        }
+                    },
+                    "pos_x": 246,
+                    "pos_y": 481,
+                    "typenode": false
+                },
+                "18": {
+                    "class": "Valva1",
+                    "data": {},
+                    "html": "<div style=\"text-align:center;cursor:pointer;\" title=\"Deschidere: 50% | Urm\u0103toarea mentenan\u021b\u0103: 07/24/2025, 03:00 AM\"><img src=\"/static/icons/icon-512.png\" width=\"32\" height=\"32\"/><div style=\"font-size:12px;margin-top:4px;\">Valva1</div></div>",
+                    "id": 18,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "input": "output_1",
+                                    "node": "12"
+                                }
+                            ]
+                        }
+                    },
+                    "name": "Valva1",
+                    "outputs": {
+                        "output_1": {
+                            "connections": [
+                                {
+                                    "node": "11",
+                                    "output": "input_1"
+                                },
+                                {
+                                    "node": "10",
+                                    "output": "input_1"
+                                },
+                                {
+                                    "node": "19",
+                                    "output": "input_1"
+                                }
+                            ]
+                        }
+                    },
+                    "pos_x": 234,
+                    "pos_y": 216,
+                    "typenode": false
+                },
+                "19": {
+                    "class": "Valva9",
+                    "data": {},
+                    "html": "<div style=\"text-align:center;cursor:pointer;\" title=\"Deschidere: 100% | Urm\u0103toarea mentenan\u021b\u0103: 07/30/2025, 04:30 AM\"><img src=\"/static/icons/icon-512.png\" width=\"32\" height=\"32\"/><div style=\"font-size:12px;margin-top:4px;\">Valva9</div></div>",
+                    "id": 19,
+                    "inputs": {
+                        "input_1": {
+                            "connections": [
+                                {
+                                    "input": "output_1",
+                                    "node": "18"
+                                }
+                            ]
+                        }
+                    },
+                    "name": "Valva9",
+                    "outputs": {
+                        "output_1": {
+                            "connections": []
+                        }
+                    },
+                    "pos_x": 514,
+                    "pos_y": 486,
+                    "typenode": false
+                }
+            }
+        }
+    },
+    "viewport": {
+        "transform": "matrix(1, 0, 0, 1, 114, -5)"
+    },
+    "zones": {
+        "Parter": {
+            "color": "#4fba7d",
+            "nodes": [
+                {
+                    "id": "18",
+                    "x": 347.99998474121094,
+                    "y": 210.99999237060547,
+                    "width": 193.42857360839844,
+                    "height": 87.14286041259766
+                },
+                {
+                    "id": "12",
+                    "x": 95.99998474121094,
+                    "y": 208.99999237060547,
+                    "width": 193.42857360839844,
+                    "height": 87.14286041259766
+                }
+            ]
+        },
+        "Etaj": {
+            "color": "#e2d436",
+            "nodes": [
+                {
+                    "id": "10",
+                    "x": 645.0000457763672,
+                    "y": 322.0000228881836,
+                    "width": 193.42857360839844,
+                    "height": 87.14286041259766
+                },
+                {
+                    "id": "11",
+                    "x": 632.0000457763672,
+                    "y": 135.00000762939453,
+                    "width": 193.42857360839844,
+                    "height": 87.14286041259766
+                },
+                {
+                    "id": "14",
+                    "x": 895.9999847412109,
+                    "y": 323.0000228881836,
+                    "width": 193.42857360839844,
+                    "height": 87.14286041259766
+                }
+            ]
+        },
+        "Pod": {
+            "color": "#613583",
+            "nodes": [
+                {
+                    "id": "13",
+                    "x": 882.9999847412109,
+                    "y": 141.99999237060547,
+                    "width": 193.42857360839844,
+                    "height": 87.14286041259766
+                }
+            ]
+        },
+        "CurteSpate": {
+            "color": "#0011ff",
+            "nodes": [
+                {
+                    "id": "15",
+                    "x": 897.9999847412109,
+                    "y": 484.99999237060547,
+                    "width": 193.42857360839844,
+                    "height": 87.14286041259766
+                }
+            ]
+        },
+        "CurteFata": {
+            "color": "#ff00f7",
+            "nodes": [
+                {
+                    "id": "16",
+                    "x": 359.99998474121094,
+                    "y": 475.99999237060547,
+                    "width": 193.42857360839844,
+                    "height": 87.14286041259766
+                }
+            ]
+        },
+        "Debara": {
+            "color": "#247402",
+            "nodes": [
+                {
+                    "id": "19",
+                    "x": 628.0000457763672,
+                    "y": 480.99999237060547,
+                    "width": 193.42857360839844,
+                    "height": 87.14286041259766
+                }
+            ]
+        }
+    }
+}

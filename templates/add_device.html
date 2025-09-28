@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Device</title>
+    <link rel="icon" href="/static/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="AppName">
+    <link rel="apple-touch-icon" href="/static/icons/icon-192.png">
+    <link rel="manifest" href="../static/manifest.json">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/">🔧 Valve Control</a>
+        <a href="/graph-editor">🚰 Installation</a>
+        <a href="/maintenance-page">🛠️ Maintenance</a>
+    </nav>
+
+    <h1>Add New Device</h1>
+
+    <form id="addDeviceForm" onsubmit="return addDevice(event)">
+        <label for="newDeviceId">Device ID:</label>
+        <input type="text" id="newDeviceId" required><br>
+        
+        <label for="newZone">Zone:</label>
+        <input list="zoneList" id="newZone" name="zone" placeholder="e.g. zone-1" required />
+        <datalist id="zoneList"></datalist>
+        <br/>
+
+        <label for="newColor">Zone Color:</label>
+        <input type="color" id="newColor" name="zone_color" value="#ff0000">
+        
+        <label for="newPinOpen">Open Pin:</label>
+        <input type="number" id="newPinOpen" required><br>
+
+        <label for="newPinClose">Close Pin:</label> 
+        <input type="number" id="newPinClose" required><br>
+
+        <button type="submit">Add Device</button>
+    </form>
+
+    <script src="/static/javascript_files/common.js"></script>
+    <script src="/static/javascript_files/add_device.js"></script>
+</body>
+</html>

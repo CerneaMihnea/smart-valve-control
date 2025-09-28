@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Valve Editor</title>
+  <link rel="icon" href="/static/icons/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="AppName">
+  <script src="https://cdn.jsdelivr.net/npm/drawflow/dist/drawflow.min.js"></script>
+  <link rel="apple-touch-icon" href="/static/icons/icon-192.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/drawflow/dist/drawflow.min.css"/>
+  <link rel="stylesheet" href="/static/styles/graph_page_style.css"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="/">🔧 Valve Control</a>
+    <a href="/add-device-page">➕ Add Device</a>
+    <a href="/maintenance-page">🛠️ Maintenance</a>
+  </nav>
+
+  <div id="wrapper">
+    <div id="sidebar">
+
+      <button id="saveGraphBtn">💾 <span class="label">Save Graph</span></button>
+      <button id="resetZonesBtn">🔄 <span class="label">Recalculate Zones</span></button>
+      <button id="toggleZonesBtn">👁️ <span class="label"></span></button>
+      <button id="addFlowBtn">➕ <span class="label">Add Flow</span></button>
+      <div id="flowConfigPanel" style="display:none;">
+        <input type="text" id="flowName" placeholder="Flow name" />
+        <input type="text" id="selectedValveName" readonly placeholder="Selected valves" />
+        <input type="color" id="flowColor" placeholder="Color" value="#ff0000">  
+        <button id="saveFlowConfigBtn">💾 <span class="label">Save Flow</span></button>
+      </div>
+
+      <button id="seeFlowBtn">📈 <span class="label">View a Flow</span></button>
+      <div id="flowSelectorContainer" style="display:none; margin:10px 0;">
+        <select id="flowSelect">
+          <option value="">-- Select a flow --</option>
+        </select>
+      </div>
+      
+      <button id="simulateBtn">🚨 <span class="label"> Simulate Failure</span></button>
+        <div id="edgeSelectorContainer" style="display:none; margin:10px 0;">
+          <select id="edgeSelect">
+            <option value="">-- Select an edge --</option>
+          </select>
+          <button id="startSimBtn">🧪 <span class="label"> Start Simulation</span></button>
+          <button id="stopSimBtn" style="display: none; margin: 10px;">❌ <span class="label"> Stop Simulation</span></button>
+        </div>
+
+      <button id="toggleDevicesBtn">▾ Devices</button>
+      
+      <div id="devices-container">
+        <h3>Devices</h3>
+        <div id="device-list"></div>
+      </div>
+    </div>
+
+    <div id="drawflow"></div>
+  </div>
+
+  <script src="/static/javascript_files/common.js"></script>
+  <script src="/static/javascript_files/graph_logic.js"></script>
+  
+</body>
+</html>
